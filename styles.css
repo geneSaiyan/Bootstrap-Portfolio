@@ -69,3 +69,13 @@ body{
   color: white;
   background-color: #3b3945;
 }
+
+#skills-section{
+  padding: 20px 48px 48px 48px;
+  background-color: white;
+}
+
+.item-icon{
+  font-size: 2rem;
+  margin-top: 30px;
+}
