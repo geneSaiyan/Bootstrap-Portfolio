@@ -1,20 +1,71 @@
 body{
-    background-image: url("images/background-image.jpeg");
-}
-
-
-.navbar a{
-    color: white;
-}
-
-.active-link{
-    border: 1px gold solid;
-}
-
-  
-  .footer {
-    margin-top: 5%;
-  }
-  
  
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  background: #403b63;
+  color: #fff;
+  overflow-y: auto;
+  scrollbar-color: rgba(0,0,0,0.2) #403b63;
+  scrollbar-width: thin;
+  display: block;
+}
+
+.header h4{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
   
+.header::-webkit-scrollbar {
+  width: 7px;
+  background-color: #403b63;
+}
+
+.header-intro{
+  line-height: 1.5;
+  font-size: 0.875rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-nav a{
+  color: white;
+}
+
+.active-item a{
+  color: 	#5f7add;
+}
+
+.main-wrapper{
+  margin-left: 280px;
+}
+
+#about-me-section{
+  padding: 48px;
+  background-color: #F5F5F5;
+}
+
+#about-me-section h1{
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.btn-primary1{
+  color: white;
+  background-color: #5f7add;
+}
+
+.btn-secondary1{
+  color: white;
+  background-color: #3b3945;
+}
