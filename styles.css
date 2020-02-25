@@ -46,16 +46,16 @@ body{
   margin-left: 280px;
 }
 
-#about-me-section{
+#about-me-section, #intro-section{
   padding: 48px;
   background-color: #F5F5F5;
 }
 
-#about-me-section h1{
+#about-me-section, #intro-section h1{
   font-weight: bold;
 }
 
-.tagline {
+.tagline { 
   font-size: 24px;
   font-weight: 300;
 }
@@ -70,7 +70,7 @@ body{
   background-color: #3b3945;
 }
 
-#skills-section{
+#skills-section, #projects-section{
   padding: 20px 48px 48px 48px;
   background-color: white;
 }
@@ -79,3 +79,4 @@ body{
   font-size: 2rem;
   margin-top: 30px;
 }
+

@@ -5,87 +5,126 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-        
+    <script src="https://kit.fontawesome.com/a1a89f55a7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <!-- Nav bar -->
-    <nav class="navbar navbar-dark bg-dark" style="margin-bottom:2%">
-        <span class="navbar-brand mb-0 h1">Gene Edwards</span>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">About Me</a>
+    <!-- Side nav -->
+    <header class="header text-center">
+        <h4>Eugene Edwards</h4>
+        <img class="mb-3 rounded-circle mx-auto" src="images/AboutMe.jpg" alt="image" height="200px" width="200px">
+        <p class="header-intro">Hello, my name is Eugene Edwards and I'm a software developer. Welcome to my personal
+            portfolio!</p>
+        <hr style="width:200px">
+        <ul class="nav flex-column ">
+            <li class="nav-item header-nav">
+                <a class="nav-link" href="index.html">
+                    <h5><i class="fa fa-user"></i> About Me</h5>
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active-link" href="portfolio.html">Portfolio</a>
+            <li class="nav-item active-item">
+                <a class="nav-link" href="portfolio.html">
+                    <h5><i class="fa fa-laptop-code"></i> Portfolio</h5>
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+            <li class="nav-item header-nav">
+                <a class="nav-link" href="#">
+                    <h5><i class="fa fa-mail-bulk"></i> Contact Me</h5>
+                </a>
             </li>
 
         </ul>
-    </nav>
-    <!--END Nav bar -->
-    
+    </header>
+    <!-- End Side Nav -->
+    <div class="main-wrapper">
 
-    <div class="container">
-        <h1>Portfolio</h1>
-        
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 300px">
-                            <img src="images/password-app.PNG" class="card-img-top" alt="Password Generator">
-                            <div class="card-body">
-                              <h5 class="card-title">Password Generator</h5>
-                              <p class="card-text">Generate a password</p>
-                              <a href="https://genesaiyan.github.io/Password-Generator/" target="_blank" class="btn btn-primary">Check it out!</a>
+        <!-- Intro Portfolio Section -->
+        <section id="intro-section">
+            <div class="container">
+                <h1>Portfolio</h1>
+                <div class="media flex-column flex-lg-row" style="max-height:400px">
+                    <div class="media-body">
+                        Welcome to my online portfolio! Below are some personal projects that I have worked on to
+                        sharpen my skills or learn new technologies. Take a look and let me know what you think!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Intro Portfolio Section -->
+        <section id="projects-section">
+            <div class="container">
+                <h2 style="border-left:5px solid #3b3945; padding-left: 10px">Project List</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/Burger-app.PNG" class="card-img-top" alt="image" height="200px">
+                            <div class="card-body" style="height:230px">
+                              <h5 class="card-title">Burger Dash App</h5>
+                              <p class="card-text">A burger logger with MySQL, Node, Express, Handlebars and a personalized ORM.</p>
+                              <a href="https://github.com/geneSaiyan/Burger-Dash" target="_blank" class="btn btn-primary">Check it out!</a>
                             </div>
                           </div>
-            </div>
-            <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 300px">
-                            <img src="images/planner-app.PNG" class="card-img-top" alt="Day Planner">
-                            <div class="card-body">
-                              <h5 class="card-title">Day Planner</h5>
-                              <p class="card-text">Day planning made easy</p>
-                              <a href="https://genesaiyan.github.io/EZ-Schedule/" target="_blank" class="btn btn-primary">Check it out!</a>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem; height:">
+                            <img src="images/EmpTrack-app.PNG" class="card-img-top" alt="image" height="200px">
+                            <div class="card-body"  style="height:230px">
+                              <h5 class="card-title">Employee Tracker App</h5>
+                              <p class="card-text">A node cli application for tracking and managing a company's employees using node, inquirer, and MySQL.</p>
+                              <a href="https://github.com/geneSaiyan/Emp-Tracker" target="_blank" class="btn btn-primary">Check it out!</a>
                             </div>
                           </div>
-            </div>
-            <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 300px">
-                            <img src="images/weather-app.PNG" class="card-img-top" alt="Weather App">
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/weather-app.PNG" class="card-img-top" alt="image" height="200px">
                             <div class="card-body">
                               <h5 class="card-title">Weather App</h5>
-                              <p class="card-text">Check the forecast</p>
-                              <a href="https://genesaiyan.github.io/Weather-Trendz/" target="_blank" class="btn btn-primary">Check it out!</a>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                           </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/planner-app.PNG" class="card-img-top" alt="image" height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Day Planner App</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                      <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/password-app.PNG" class="card-img-top" alt="image" height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Random Password App</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
-        
-
-        <div>
-                <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-center footer">
-                        <a class="navbar-brand" href="#">Copyright &copy; 2019</a>
-                    </nav>
-        </div>
-       
-        
-        
+        </section>
+    </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
